@@ -1,129 +1,206 @@
 /* border: 3px solid white; */
 
 .container {
-  max-width: 1250px;
-  margin: 0 auto;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #333745;
+  }
+  
+  header {
+    background-color: #00a6fb;
+  }
+  
+  header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header a {
+    background-color: #fffff0;
+    list-style: none;
+    padding: 5px 15px;
+    margin: 5px 5px;
+    /* border-radius: 30px; */
+  }
+
+.first-ul {
+    padding: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.second-ul {
+    padding-left: 130px;
 }
-
-body {
-  background-color: #333745;
-}
-
-header {
-  background-color: #00a6fb;
-}
-
-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header a {
-  background-color: #fffff0;
-  padding: 5px 10px;
-  /* border-radius: 30px; */
-}
-
+  
 .main-logo {
-  width: 200px;
-  margin-bottom: -100px;
+    width: 200px;
+    margin-bottom: -100px;
+    position: center;
 }
+
+/* <---------------End header--------------> */
+
 
 .hero-image {
-  background-image: url("Overall_background.png"); /* The image used */
-  background-position: center; /* Center the image */
-  background-repeat: repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("Overall_background.png"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-
+  
 .section-one {
-  background-image: url("picture/Mainpagebackground1.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  max-width: 1250px;
-  margin: 0 auto;
-  border: 4px;
-  border-style: solid;
-}
-.section-one > h1 {
-  border: 4px;
-  border-style: solid;
-  margin-top: 100px;
+    background-image: url("picture/Mainpagebackground1.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    border: 4px;
+    border-style: solid;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
-.section-two {
-  background-image: url("picture/Background picture/Overall_background.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  max-width: 1250px;
-  max-width: 1250px;
-  margin: 0 auto;
-  border: 4px;
-  border-style: solid;
-  border-color: red;
+.section-one > h1{
+    padding-bottom: 20px;
 }
 
-.most_popular {
-  background-image: url("picture/Background picture/Overall_background.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  max-width: 1250px;
-  max-width: 1250px;
-  margin: 0 auto;
-  border: 4px;
-  border-style: solid;
-  border-color: red;
+.section-one > h2{
+    background-color: #fffff0;
+    border-radius: 30px;
+    margin: 50px 550px;
 }
 
-.top_seller {
-  background-image: url("picture/Background picture/Overall_background.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  max-width: 1250px;
-  max-width: 1250px;
-  margin: 0 auto;
+.section-one > h3{
+    margin: auto 150px;
 }
 
-.promotion {
-  background-image: url("picture/Background picture/Overall_background.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  max-width: 1250px;
-  max-width: 1250px;
-  margin: 0 auto;
+/* <---------------End Section1--------------> */
+
+.infomation{ 
+    background-image: url("Picture/Overall background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    max-width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+    /* border: 4px;
+    border-style: solid;
+    border-color: red; */
 }
 
-footer {
-  background-color: #0542c7;
+.image2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 4px;
+    border-style: solid;
+    border-color: red; */
 }
 
-.exmarks {
-  font-family: Karantina;
-  font-size: 6rem;
+.info-text{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.685);
+    margin: auto 450px;
+    padding: 25px;
+    border-radius: 40px;
+    position: relative;
+    top: -191px;
+    left: 191px;
+
 }
 
+.info-text > h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* <---------------End Infomation--------------> */
+  
+  .most_popular {
+    background-image: url("Picture/Overall background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    max-width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+    /* border: 4px;
+    border-style: solid;
+    border-color: red; */
+  }
+
+  /* <---------------End Most popular--------------> */
+  
+  .top_seller {
+    background-image: url("Picture/Overall background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    max-width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  /* <---------------End Topseller--------------> */
+  
+  .promotion {
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    max-width: 1250px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .exmarks {
+    font-family: Karantina;
+    font-size: 6rem;
+  }
+
+/* <---------------End Promotion--------------> */
+  
+  footer {
+    background-color: #0542c7;
+  }
+  
+  .exmarks {
+    font-family: Karantina;
+    font-size: 6rem;
+  }
+
+/* <---------------End everthing :D --------------> */
+  
+/* |Down here is my note| */
 /*.image1 {
-  position: absolute;
-  top: ;
-  left: ;
-  border: 1px solid #000000;
+    position: absolute;
+    top: ;
+    left: ;
+    border: 1px solid #000000;
 }
 .image2 {
-  position: relative;
-  top: 487px;
-  left: 0px;
-  border: 1px solid #000000;
-  width: ;
+    position: relative;
+    top: 487px;
+    left: 0px;
+    border: 1px solid #000000;
+    width: ;
 }*/
+
+/* border: 4px;
+    border-style: solid;
+    border-color: red; */
+
+/* border-radius: 30px; */
